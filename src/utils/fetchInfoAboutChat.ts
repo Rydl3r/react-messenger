@@ -1,6 +1,5 @@
 import { firestore } from '../firebase'
-import { doc, DocumentData, getDoc } from "firebase/firestore";
-import IChat from '../models/IChat';
+import { doc, getDoc } from "firebase/firestore";
 
 export const fetchInfoAboutChat = async (uid: string) => {
     const docRef = doc(firestore, "chats", uid);

@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AuthPage from './components/AuthPage';
 import Chat from "./components/Chat";
 

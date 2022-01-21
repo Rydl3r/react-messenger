@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { updateDoc, doc, arrayUnion } from "firebase/firestore";
 import { firestore } from "../firebase";
 import IChat from "../models/IChat";
-import IUser from "../models/IUser";
 import IMessage from "../models/IMessage";
 
 

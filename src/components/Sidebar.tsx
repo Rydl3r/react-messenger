@@ -55,7 +55,7 @@ function Sidebar(props: { user: any, setOpenedChat: (value: IChat) => void; }) {
     }
 
     const fetchChat = async (cid: string) => {
-        let data: any = await fetchInfoAboutChat(cid)
+        let data: IChat = await fetchInfoAboutChat(cid) as IChat
         data.cid = cid
         props.setOpenedChat(data)
 
@@ -119,7 +119,7 @@ function Sidebar(props: { user: any, setOpenedChat: (value: IChat) => void; }) {
                 </DialogActions>
             </Dialog>
             {currentUserInfo && currentUserInfo.startedChats && currentUserInfo.startedChats.length > 0
-                ? currentUserInfo.startedChats.map((chat: any) => <ChatPreview key={chat} currentUser={props.user.uid} chat={chat} fetchChat={fetchChat} />)
+                ? currentUserInfo.startedChats.map((chat: string) => <ChatPreview key={chat} currentUser={props.user.uid} chat={chat} fetchChat={fetchChat} />)
                 : ""}
         </Box >
     )

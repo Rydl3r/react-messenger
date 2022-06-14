@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import AuthPage from './components/AuthPage';
+import AuthPage from "./components/AuthPage";
 import Chat from "./components/Chat";
 
 function App() {
